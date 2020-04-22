@@ -18,7 +18,7 @@ Load the exported map's json file, this is a possible example of how:
 ```
 let mapSource = null;
 
-fetch('/assets/games/1/1.json').then((response) => {
+fetch('path_to_json_file.json').then((response) => {
 
   return response.json();
 
@@ -31,8 +31,8 @@ fetch('/assets/games/1/1.json').then((response) => {
 
 Create the new crafty entity:
 ```
-Crafty.e('MapComponent', `${ scene.name } Map`)
-  .render('MAP_NAME', mapSource, (mapComponent) => {
+Crafty.e('MapComponent')
+  .render('map_name', mapSource, (mapComponent) => {
 
     // OPTIONAL CALLBACK WITH
     // THE CREATED ENTITY
