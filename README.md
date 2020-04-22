@@ -32,7 +32,7 @@ fetch('path_to_json_file.json').then((response) => {
 Create the new crafty entity:
 ```
 Crafty.e('MapComponent')
-  .render('map_name', mapSource, (mapComponent) => {
+  .render('map_name', mapSource, (mapEntity) => {
 
     // OPTIONAL CALLBACK WITH
     // THE CREATED ENTITY
